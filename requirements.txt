@@ -10,8 +10,14 @@ charset-normalizer==3.4.1
     # via requests
 datetime==5.5
     # via -r requirements.in
+findspark==2.0.1
+    # via -r requirements.in
 idna==3.10
     # via requests
+py4j==0.10.9.7
+    # via pyspark
+pyspark==3.5.4
+    # via -r requirements.in
 pytz==2024.2
     # via datetime
 requests==2.32.3
