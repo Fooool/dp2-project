@@ -14,6 +14,8 @@ findspark==2.0.1
     # via -r requirements.in
 idna==3.10
     # via requests
+numpy==2.2.2
+    # via -r requirements.in
 py4j==0.10.9.7
     # via pyspark
 pyspark==3.5.4
