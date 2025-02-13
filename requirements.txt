@@ -8,24 +8,44 @@ certifi==2024.12.14
     # via requests
 charset-normalizer==3.4.1
     # via requests
+contourpy==1.3.1
+    # via matplotlib
+cycler==0.12.1
+    # via matplotlib
 datetime==5.5
     # via -r requirements.in
 findspark==2.0.1
     # via -r requirements.in
+fonttools==4.56.0
+    # via matplotlib
 idna==3.10
     # via requests
+kiwisolver==1.4.8
+    # via matplotlib
+matplotlib==3.10.0
+    # via -r requirements.in
 numpy==2.2.2
     # via
     #   -r requirements.in
+    #   contourpy
+    #   matplotlib
     #   pandas
+packaging==24.2
+    # via matplotlib
 pandas==2.2.3
     # via -r requirements.in
+pillow==11.1.0
+    # via matplotlib
 py4j==0.10.9.7
     # via pyspark
+pyparsing==3.2.1
+    # via matplotlib
 pyspark==3.5.4
     # via -r requirements.in
 python-dateutil==2.9.0.post0
-    # via pandas
+    # via
+    #   matplotlib
+    #   pandas
 pytz==2024.2
     # via
     #   datetime
