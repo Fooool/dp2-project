@@ -15,15 +15,27 @@ findspark==2.0.1
 idna==3.10
     # via requests
 numpy==2.2.2
+    # via
+    #   -r requirements.in
+    #   pandas
+pandas==2.2.3
     # via -r requirements.in
 py4j==0.10.9.7
     # via pyspark
 pyspark==3.5.4
     # via -r requirements.in
+python-dateutil==2.9.0.post0
+    # via pandas
 pytz==2024.2
-    # via datetime
+    # via
+    #   datetime
+    #   pandas
 requests==2.32.3
     # via -r requirements.in
+six==1.17.0
+    # via python-dateutil
+tzdata==2025.1
+    # via pandas
 urllib3==2.3.0
     # via requests
 zope-interface==7.2

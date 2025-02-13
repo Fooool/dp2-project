@@ -3,3 +3,4 @@ datetime
 findspark
 pyspark
 numpy
+pandas
