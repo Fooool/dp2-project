@@ -4,3 +4,4 @@ findspark
 pyspark
 numpy
 pandas
+matplotlib
