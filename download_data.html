@@ -7743,6 +7743,8 @@ Note: you may need to restart the kernel to use updated packages.
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>This code retrieves energy load data from the Transparency Portal API. It queries data for each month within a specified date range and saves the response (in XML format) to a directory. The process ensures that the necessary API key is provided, handles API requests, and stores the data in a structured folder hierarchy (organized by year and month).</p>
+<p><strong>Data Source:</strong> <a href="https://transparency.entsoe.eu/">Transparency Portal</a></p>
+<p><strong>License:</strong> <a href="https://transparency.entsoe.eu/content/static_content/download?path=%2FStatic+content%2Fterms+and+conditions%2F231018_List_of_Data_available_for_reuse.pdf">List of data for free re-use</a></p>
 </div>
 </div>
 </div>
@@ -7754,7 +7756,10 @@ Note: you may need to restart the kernel to use updated packages.
 <div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Restful API Guide: https://documenter.getpostman.com/view/7009892/2s93JtP3F6</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Data Source: https://transparency.entsoe.eu/</span>
+<span class="c1"># License: https://transparency.entsoe.eu/content/static_content/download?path=%2FStatic+content%2Fterms+and+conditions%2F231018_List_of_Data_available_for_reuse.pdf</span>
+
+<span class="c1"># Restful API Guide: https://documenter.getpostman.com/view/7009892/2s93JtP3F6</span>
 
 <span class="c1"># Check if the Transparency API key is missing or set to the demo key</span>
 <span class="k">if</span> <span class="n">TRANSPARENCY_API_KEY</span> <span class="o">==</span> <span class="s2">"DEMO_KEY"</span><span class="p">:</span>
@@ -7853,6 +7858,8 @@ Data saved to ./data/transparency/2025/01.xml
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>The code checks if a valid API key is provided, then loops through each month in the specified date range to request historical weather data from the GeoSphere API. It sends monthly requests for parameters like rainfall, temperature, and wind speed, saves the results as CSV files, and handles potential errors in the request or file saving process. To avoid exceeding the API's rate limit, the code waits briefly between requests.</p>
+<p><strong>Data Source:</strong> <a href="https://data.hub.geosphere.at/dataset/klima-v2-1h">GeoSphere Austria hourly station data</a></p>
+<p><strong>License:</strong> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a></p>
 </div>
 </div>
 </div>
@@ -7864,7 +7871,11 @@ Data saved to ./data/transparency/2025/01.xml
 <div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Define the GeoSphere API base URL for historical weather data</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Data Source: https://data.hub.geosphere.at/dataset/klima-v2-1h</span>
+<span class="c1"># License: https://creativecommons.org/licenses/by/4.0/</span>
+
+
+<span class="c1"># Define the GeoSphere API base URL for historical weather data</span>
 <span class="n">api_url</span> <span class="o">=</span> <span class="s2">"https://dataset.api.hub.geosphere.at/v1/station/historical/"</span>
 <span class="c1"># Specify the dataset we want to use for historical weather data (klima-v2-1 represents hourly climate data)</span>
 <span class="n">api_dataset</span> <span class="o">=</span> <span class="s2">"klima-v2-1h"</span>
