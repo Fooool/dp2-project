@@ -1,5 +1,9 @@
 # Harnessing Weather Insights for Accurate Energy Load Forecasting
 
+by Florian Schulze, Raffaela Länger, Johanna Kronfuß and Julian Janisch
+
+------------
+
 ## Goal of this project
 This project aims to predict energy consumption in Austria by integrating energy consumption data from the ENTSO-E Transparency Platform and real-time weather data from GeoSphere Austria. By combining these data sources, we seek to analyze the correlation between weather conditions and energy consumption patterns, ultimately improving energy demand forecasting for the next 48 hours.
 
